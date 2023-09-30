@@ -1,3 +1,6 @@
+/**
+ * https://leetcode.com/problems/buildings-with-an-ocean-view/
+ */
 function findBuildings(heights: number[]): number[] {
   if (!heights.length) {
     return []
