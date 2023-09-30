@@ -10,7 +10,7 @@
  * }
  */
 
-import {ListNode} from '../../types'
+import {ListNode} from '@typings'
 
 export function reverseList(head: ListNode | null): ListNode | null {
   if (!head) {

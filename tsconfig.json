@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "baseUrl": ".",
+    "paths": {
+      "@utils": ["src/utils"],
+      "@typings": ["src/typings"],
+    }
   }
 }

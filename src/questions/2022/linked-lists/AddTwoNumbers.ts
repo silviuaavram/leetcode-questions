@@ -10,7 +10,7 @@
  * }
  */
 
-import {ListNode} from '../../types'
+import {ListNode} from '@typings'
 
 export function addTwoNumbers(
   l1: ListNode | null,

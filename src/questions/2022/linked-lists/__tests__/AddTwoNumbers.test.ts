@@ -1,4 +1,4 @@
-import {buildList} from '../../../utils'
+import {buildList} from '@utils'
 import {addTwoNumbers} from '../AddTwoNumbers'
 
 test('adds 342 and 465', function add342And465() {

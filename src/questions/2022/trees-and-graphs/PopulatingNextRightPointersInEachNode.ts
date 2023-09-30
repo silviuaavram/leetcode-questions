@@ -14,7 +14,7 @@
  * }
  */
 
-import {TreeNode} from '../../types'
+import {TreeNode} from '@typings'
 
 export type Node = TreeNode & {next: Node}
 

@@ -12,7 +12,7 @@
  * }
  */
 
-import {TreeNode} from '../../types'
+import {TreeNode} from '@typings'
 
 export function isValidBST(root: TreeNode | null): boolean {
   if (!root) {

@@ -1,4 +1,4 @@
-import {buildTree} from '../../../utils'
+import {buildTree} from '@utils'
 import {levelOrder} from '../BinaryTreeLevelOrderTraversal'
 
 test('traverses by level a 5 node tree', function traverse3NodeTree() {

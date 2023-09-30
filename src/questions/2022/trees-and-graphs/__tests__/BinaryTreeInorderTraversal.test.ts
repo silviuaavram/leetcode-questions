@@ -1,4 +1,4 @@
-import {buildTree} from '../../../utils'
+import {buildTree} from '@utils'
 import {inorderTraversal} from '../BinaryTreeInorderTraversal'
 
 test('traverses in order a 3 node tree', function traverse3NodeTree() {

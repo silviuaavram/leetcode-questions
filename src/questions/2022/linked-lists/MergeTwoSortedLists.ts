@@ -10,7 +10,7 @@
  * }
  */
 
-import {ListNode} from '../../types'
+import {ListNode} from '@typings'
 
 export function mergeTwoLists(
   list1: ListNode | null,

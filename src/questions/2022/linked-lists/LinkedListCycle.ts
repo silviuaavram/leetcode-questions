@@ -10,7 +10,7 @@
  * }
  */
 
-import {ListNode} from '../../types'
+import {ListNode} from '@typings'
 
 export function hasCycle(head: ListNode | null): boolean {
   let skip1: ListNode = head

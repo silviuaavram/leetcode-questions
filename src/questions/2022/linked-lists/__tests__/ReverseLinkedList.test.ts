@@ -1,4 +1,4 @@
-import {buildList} from '../../../utils'
+import {buildList} from '@utils'
 import {reverseList} from '../ReverseLinkedList'
 
 test('reverses a 5 node list', function reverse5NodeList() {

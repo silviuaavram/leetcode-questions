@@ -12,7 +12,7 @@
  * }
  */
 
-import {TreeNode} from '../../types'
+import {TreeNode} from '@typings'
 
 export function lowestCommonAncestor(
   root: TreeNode | null,
@@ -50,13 +50,16 @@ export function lowestCommonAncestor(
 
   let commonAncestor = root
 
-  for (let index = 0; index < Math.min(breadCrumbs.p.length, breadCrumbs.q.length); index++) {
+  for (
+    let index = 0;
+    index < Math.min(breadCrumbs.p.length, breadCrumbs.q.length);
+    index++
+  ) {
     if (breadCrumbs.p[index] !== breadCrumbs.q[index]) {
       break
     }
 
     commonAncestor = breadCrumbs.p[index]
-    
   }
   return commonAncestor
 }

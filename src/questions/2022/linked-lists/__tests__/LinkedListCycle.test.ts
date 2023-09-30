@@ -1,4 +1,4 @@
-import {buildList} from '../../../utils'
+import {buildList} from '@utils'
 import {hasCycle} from '../LinkedListCycle'
 
 test('has a cycle in position 1', function cyclePos1() {

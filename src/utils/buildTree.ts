@@ -1,4 +1,4 @@
-import {TreeNode} from '../types/treesAndGraphs'
+import {TreeNode} from '../typings/treesAndGraphs'
 
 export default function buildTree(values: (number | null)[]): TreeNode | null {
   if (!values || !values[0]) {

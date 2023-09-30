@@ -1,4 +1,4 @@
-import {buildList} from '../../../utils'
+import {buildList} from '@utils'
 import {getIntersectionNode} from '../IntersectionOfTwoLinkedLists'
 
 test('lists intersect at node 8', function intersectAt8() {

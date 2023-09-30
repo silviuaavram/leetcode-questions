@@ -1,4 +1,4 @@
-import {buildList} from '../../../utils'
+import {buildList} from '@utils'
 import {mergeTwoLists} from '../MergeTwoSortedLists'
 
 test('merges 3 node lists', function merge3NodeLists() {

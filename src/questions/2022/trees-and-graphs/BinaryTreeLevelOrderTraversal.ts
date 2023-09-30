@@ -12,7 +12,7 @@
  * }
  */
 
-import {TreeNode} from '../../types'
+import {TreeNode} from '@typings'
 
 export function levelOrder(root: TreeNode | null): number[][] {
   const result: number[][] = []

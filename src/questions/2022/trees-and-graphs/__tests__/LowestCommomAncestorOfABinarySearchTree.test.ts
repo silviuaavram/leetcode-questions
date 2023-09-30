@@ -1,4 +1,4 @@
-import {buildTree} from '../../../utils'
+import {buildTree} from '@utils'
 import {lowestCommonAncestor} from '../LowestCommomAncestorOfABinarySearchTree'
 
 test('common between 2 and 8 is 6', function commonOf2And8Is6() {

@@ -1,4 +1,4 @@
-import {ListNode} from '../types'
+import {ListNode} from '../typings'
 
 export default function BuildList(values: number[]): ListNode {
   const head: ListNode = {val: values[0], next: null}

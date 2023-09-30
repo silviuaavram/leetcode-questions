@@ -1,4 +1,4 @@
-import {buildTree} from '../../../utils'
+import {buildTree} from '@utils'
 import {isValidBST} from '../ValidateBinarySearchTree'
 
 test('empty tree is BST', function emptyIsBST() {

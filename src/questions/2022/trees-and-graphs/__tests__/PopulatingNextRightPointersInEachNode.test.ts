@@ -1,4 +1,4 @@
-import {buildTree} from '../../../utils'
+import {buildTree} from '@utils'
 import {connect, Node} from '../PopulatingNextRightPointersInEachNode'
 
 test('connects the nodes correctly', function connectNodes() {
