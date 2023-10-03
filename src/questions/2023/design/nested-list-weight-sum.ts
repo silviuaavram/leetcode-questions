@@ -1,4 +1,6 @@
 /**
+ * https://leetcode.com/problems/nested-list-weight-sum/submissions/
+ *
  * // This is the interface that allows for creating nested lists.
  * // You should not implement it, or speculate about its implementation
  * class NestedInteger {
