@@ -1,3 +1,6 @@
+/**
+ * https://leetcode.com/problems/random-pick-with-weight/
+ */
 class Solution {
   private totalProbability: number
   private probabilities: number[]
