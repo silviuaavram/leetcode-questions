@@ -59,7 +59,7 @@ test('copies a linked list with random pointer 2', () => {
   expect((newList.next as Node).random).toEqual(newList.next)
 })
 
-test.only('copies a linked list with random pointer 3', () => {
+test('copies a linked list with random pointer 3', () => {
   const list = buildList([3, 3, 3]) as Node
 
   list.random = null
