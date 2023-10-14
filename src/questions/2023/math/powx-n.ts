@@ -11,6 +11,7 @@ function myPow(x: number, n: number): number {
     return 1 / myPow(x, -n)
   }
 
+  // binary exponentiation. f(2,100) = f(2^2,50) = f(2^4,25) = 2^4 * f(2^4, 24) = ...
   if (n % 2 === 1) {
     return x * myPow(x * x, (n - 1) / 2)
   } else {

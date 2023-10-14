@@ -42,7 +42,7 @@ test('arrays to be merged 4', () => {
   expect(nums1).toEqual([1, 2, 2, 3, 4, 5, 6, 7, 9])
 })
 
-test.only('arrays to be merged 5', () => {
+test('arrays to be merged 5', () => {
   const nums1 = [1, 2, 4, 5, 6, 0]
   const m = 5
   const nums2 = [3]
