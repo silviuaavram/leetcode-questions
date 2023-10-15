@@ -1,7 +1,7 @@
 import {TreeNode} from '../typings/treesAndGraphs'
 
 export default function buildTree(values: (number | null)[]): TreeNode | null {
-  if (!values || !values[0]) {
+  if (!values?.length) {
     return null
   }
 
