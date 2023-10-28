@@ -1,7 +1,6 @@
 /**
  * https://leetcode.com/problems/diagonal-traverse-ii/description/
  */
-
 function findDiagonalOrder(nums: number[][]): number[] {
   const result: [number, number][][] = []
 
