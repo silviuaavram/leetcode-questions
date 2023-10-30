@@ -1,6 +1,6 @@
 import {ListNode} from '../typings'
 
-export default function BuildList(values: number[]): ListNode {
+export default function buildList(values: number[]): ListNode {
   const head: ListNode = {val: values[0], next: null}
   let current = head
 

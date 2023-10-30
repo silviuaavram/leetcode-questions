@@ -1,2 +1,2 @@
-export {TreeNode, TreeNodeWithParent} from './treesAndGraphs'
+export {TreeNode, TreeNodeWithParent, GraphNode} from './treesAndGraphs'
 export {ListNode} from './linkedLists'

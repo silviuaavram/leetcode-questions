@@ -1,6 +1,6 @@
 export type TreeNode = {
   val: number
-  left?: TreeNode | null 
+  left?: TreeNode | null
   right?: TreeNode | null
 }
 
@@ -9,4 +9,9 @@ export interface TreeNodeWithParent {
   val: number
   left?: TreeNodeWithParent | null
   right?: TreeNodeWithParent | null
+}
+
+export type GraphNode = {
+  val: number
+  neighbors: GraphNode[]
 }
