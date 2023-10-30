@@ -1,7 +1,6 @@
 /**
  * https://leetcode.com/problems/number-of-islands/
  */
-
 function numIslands(grid: string[][]): number {
   const visited: boolean[][] = []
   let islands = 0

@@ -1,3 +1,6 @@
+/**
+ * https://leetcode.com/problems/meeting-rooms-ii/
+ */
 function minMeetingRooms(intervals: number[][]): number {
   let freeRooms = 0
   const busyRooms = []

@@ -1,7 +1,6 @@
 /**
  * https://leetcode.com/problems/group-shifted-strings/
  */
-
 function groupStrings(strings: string[]): string[][] {
   // create a hash for each string that is going to be the absolute difference between the chars and the first char.
   // for instance, ab will have 1, abc will have 1-2, acef will have 2-4-5.
