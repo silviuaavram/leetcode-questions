@@ -35,7 +35,7 @@ test('returns the minimum window 5', () => {
   expect(minWindow(s, t)).toEqual('NC')
 })
 
-test.only('returns the minimum window 6', () => {
+test('returns the minimum window 6', () => {
   const s = 'bba'
   const t = 'ab'
 
