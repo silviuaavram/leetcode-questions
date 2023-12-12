@@ -1,4 +1,6 @@
 /**
+ * https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/
+ * 
  * Definition for a binary tree node.
  * class TreeNode {
  *     val: number
