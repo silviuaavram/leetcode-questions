@@ -1,5 +1,5 @@
 /**
- * https://leetcode.com/problems/perfect-squares/
+ * https://leetcode.com/problems/perfect-squares/description
  */
 
 export function numSquares(n: number): number {
