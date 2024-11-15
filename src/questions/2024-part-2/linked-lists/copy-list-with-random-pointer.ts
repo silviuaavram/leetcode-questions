@@ -1,5 +1,8 @@
 /**
- * https://leetcode.com/problems/copy-list-with-random-pointer/
+ * https://leetcode.com/problems/copy-list-with-random-pointer/description
+ * 
+ * We will create a copy for each node reference it to the old node via map.
+ * Then we will just go through the nodes again, and map next and random.
  */
 export type _Node = {
   random: _Node | null
