@@ -20,11 +20,5 @@ test('generates parantheses 3', () => {
   expect(generateParenthesis(n)).toEqual(expect.arrayContaining(['()()', '(())']))
 })
 
-test('generates parantheses 4', () => {
-  const n = 4
-
-  expect(generateParenthesis(n)).toEqual(expect.arrayContaining(['()()', '(())']))
-})
-
 
 
