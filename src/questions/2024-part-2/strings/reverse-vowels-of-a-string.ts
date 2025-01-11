@@ -1,5 +1,8 @@
 /**
  * https://leetcode.com/problems/reverse-vowels-of-a-string/description
+ * 
+ * We save the indeces of the vowels as we parse the string.
+ * Then we switch them 2 by 2, starting with first and last.
  */
 function reverseVowels(s: string): string {
   const vowels = new Set(['a', 'e', 'i', 'o', 'u'])
@@ -8,7 +11,7 @@ function reverseVowels(s: string): string {
 
   for (let index = 0; index < s.length; index++) {
     if (vowels.has(s[index].toLowerCase())) {
-      toSwitch.push([index])
+      toSwitch.push(index)
     }
   }
 
