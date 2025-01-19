@@ -1,7 +1,10 @@
 /**
  * https://leetcode.com/problems/split-linked-list-in-parts/description
  *
- *
+ * We get the list size, the part size, and remainder from the division between list size and k.
+ * Now we split the list into part size (+1 if there's remainder).
+ * We split by iterating with a current node.
+ * When we reached the last node in the part list, we push the previous head, cut the next, move to next with current, and update head to be current.
  */
 /**
  * Definition for singly-linked list.
@@ -24,7 +27,7 @@ function splitListToParts(
   if (!head) {
     return new Array(k).fill(null)
   }
-  
+
   let size = 0
   let current = head
 
