@@ -19,8 +19,6 @@ function maximumSwap(num: number): number {
       digits[index] > digits[maxIndex[index + 1]] ? index : maxIndex[index + 1]
   }
 
-  console.log(maxIndex)
-
   for (let index = 0; index < digits.length; index++) {
     if (digits[index] < digits[maxIndex[index]]) {
       const aux = digits[index]
