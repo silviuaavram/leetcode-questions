@@ -1,42 +1,34 @@
 /**
  * https://leetcode.com/problems/longest-palindromic-substring/description
  *
- * There are many edge cases to watch for.
- * We will cover them by looping through the string and check for palindrome starting at a character.
- * If the adjacent character is the same, we check for palindrome starting with both characters.
+ * One answer that must be correct is the first character.
+ * Then we iterate the string and check starting from adjacent chars, or chars separated by one char.
+ * If the check results in a palindrome, we attempt to refresh the result, and check again with updated indeces.
  */
-
 function longestPalindrome(s: string): string {
-  let palindrome = s[0]
+  let result = s[0]
 
-  function updatePalindrome(start: number, end: number) {
-    if (palindrome.length < end - start + 1) {
-      palindrome = s.slice(start, end + 1)
-    }
-  }
-
-  function checkPalindrome(start: number, end: number): void {
-    if (start < 0 || end === s.length) {
+  function checkPalindrome(start: number, end: number) {
+    if (start < 0 || end === s.length || s[start] !== s[end]) {
       return
     }
 
-    if (s[start] === s[end]) {
-      updatePalindrome(start, end)
+    if (result.length < end - start + 1) {
+      result = s.slice(start, end + 1)
+    }
 
-      checkPalindrome(start - 1, end + 1)
+    checkPalindrome(start - 1, end + 1)
+  }
+
+  for (let index = 0; index < s.length - 1; index++) {
+    checkPalindrome(index, index + 1)
+
+    if (index > 0) {
+      checkPalindrome(index - 1, index + 1)
     }
   }
 
-  for (let index = 0; index < s.length; index++) {
-    checkPalindrome(index - 1, index + 1)
-
-    if (s[index] === s[index + 1]) {
-      updatePalindrome(index, index + 1)
-      checkPalindrome(index - 1, index + 2)
-    }
-  }
-
-  return palindrome
+  return result
 }
 
 export {longestPalindrome}
