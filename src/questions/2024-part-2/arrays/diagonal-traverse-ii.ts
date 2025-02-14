@@ -1,34 +1,31 @@
 /**
  * https://leetcode.com/problems/diagonal-traverse-ii/description
  *
- * We create a parsing function that goes upwards and rightwards.
- * We call this startng on first column for all the rows, then from the second column on the last row.
+ * We want to avoid going row x row complexity, and to avoid empty spaces.
+ * We assign each position a diagonal index, which is row index + col index.
+ * We add all elements on a diagonal in a corresponding map entry.
+ * We go from last row to first in order to ensure we add the elements in order.
  */
 function findDiagonalOrder(nums: number[][]): number[] {
-  let result = []
-  const rows = nums.length
-  const cols = nums.reduce((acc, num) => Math.max(acc, num.length), -Infinity)
+  const diagonals = new Map<number, number[]>()
+  const result = []
 
-  function parseDiagonal(row: number, col: number): void {
-    if (row < 0 || col === cols) {
-      return
+  for (let rowIndex = nums.length - 1; rowIndex >= 0; rowIndex--) {
+    const row = nums[rowIndex]
+
+    for (let colIndex = 0; colIndex < row.length; colIndex++) {
+      const diagonalIndex = rowIndex + colIndex
+
+      if (!diagonals.has(diagonalIndex)) {
+        diagonals.set(diagonalIndex, [])
+      }
+
+      diagonals.get(diagonalIndex).push(row[colIndex])
     }
-
-    const number = nums[row][col]
-
-    if (number !== undefined) {
-      result.push(number)
-    }
-
-    parseDiagonal(row - 1, col + 1)
   }
 
-  for (let index = 0; index < rows; index++) {
-    parseDiagonal(index, 0)
-  }
-
-  for (let index = 1; index < cols; index++) {
-    parseDiagonal(rows - 1, index)
+  for (let index = 0; index < diagonals.size; index++) {
+    result.push(...diagonals.get(index))
   }
 
   return result
