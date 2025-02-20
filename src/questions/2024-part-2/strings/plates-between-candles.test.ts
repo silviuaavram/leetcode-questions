@@ -30,7 +30,7 @@ test('gets plates between candles 3', () => {
   expect(platesBetweenCandles(s, queries)).toEqual([2])
 })
 
-test.only('gets plates between candles 3', () => {
+test('gets plates between candles 3', () => {
   const s = "||*"
   const queries = [[2,2]]
 
