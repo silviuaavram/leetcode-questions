@@ -2,7 +2,7 @@
  * https://leetcode.com/problems/climbing-stairs/description
  *
  * We make use of previous steps, and memoize the solutions.
- * We initialize the first 2 steps with 1 and 2, then return based on memo solution or previous calls.
+ * We initialize the first 2 steps with 1 and 2, then return based on memo solution of previous calls.
  */
 function climbStairs(n: number): number {
   const stairs = new Array(n)
